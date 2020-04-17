@@ -1,19 +1,19 @@
 ﻿using System;
 
-namespace Excersize_6
+namespace Exercise_6
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            var condition = "n";
+            String condition;
 
             do
             {
                 Console.WriteLine("Hello, World!");
                 Console.WriteLine("Would you like to continue (y/n)?");
-                condition = Console.ReadLine();
-            } while (condition == "y");
+                condition = Console.ReadLine().ToUpper();
+            } while (condition == "Y");
 
             Console.WriteLine("Goodbye!");
         }

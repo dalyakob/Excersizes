@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Excersize_7
+namespace Exercise_7
 {
     class MainClass
     {
