@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercise_14
+namespace Exercise_15
 {
     class MainClass
     {
@@ -22,12 +22,12 @@ namespace Exercise_14
                 } while (!valid);
                 for (int i = 1; i <= max; i++)
                 {
-                    Console.WriteLine(Math.Pow(i, 2));
+                    Console.WriteLine(Math.Pow(i, 3));
                 }
                 Console.Write("Would you like to continue (y/n)?");
                 condition = Console.ReadLine().ToLower();
             } while (condition == "y");
-
+            Console.WriteLine("Goodbye!!!");
         }
     }
 }
