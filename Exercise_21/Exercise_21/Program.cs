@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Exercise_21
 {
@@ -11,21 +12,19 @@ namespace Exercise_21
             do
             {
 
-                var sentence = new string[30];
-                var x = 0;
+                var sentence = new List<string>();
                 do
                 {
                     Console.WriteLine("Enter a word: ");
-                    sentence[x] = Console.ReadLine();
-                    x++;
+                    sentence.Add(Console.ReadLine());
 
                     Console.WriteLine("Do you want to enter another word? (y/n) ");
                     condition = Console.ReadLine().ToLower();
                 } while (condition == "y");
 
-                for (int i = 0; i < x; i++)
+                foreach (var item in sentence)
                 {
-                    Console.Write(sentence[i] + " ");
+                    Console.Write(item + " ");
                 }
 
                 Console.WriteLine("\nWould you like to continue? (y/n)");
