@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Exercise_25
 {
@@ -11,7 +12,7 @@ namespace Exercise_25
                 Console.Write("Enter a sentence: ");
                 string sentence = Console.ReadLine();
 
-                var words = sentence.Split(' ');
+                var words = sentence.Split(' ').ToList();
 
                 foreach (var item in words)
                 {
