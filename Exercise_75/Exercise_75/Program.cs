@@ -30,8 +30,10 @@ namespace Exercise_75
         {
             for (int i = 0; i <= num; i++)
             {
-                if(i*i == num)
+                if (i * i == num)
                     return i;
+                else if (i * i > num)
+                    return -1;
             }
             return -1;
         }
